@@ -1,0 +1,65 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #343536;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.image {
+    width: 100%;
+}
+
+.card, .image {
+    border-radius: 2rem;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    margin: 1.5rem;
+    font-size: 3rem;
+    color: hsl(218, 44%, 22%);
+}
+
+p {
+    font-size: 1.8rem;
+    color: hsl(220, 15%, 55%);
+}
+
+.gradient-background {
+    background: linear-gradient(21deg,#b502f7,#131e07,#4cac1b,#2f99f8);
+    background-size: 240% 240%;
+    animation: gradient-animation 36s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
