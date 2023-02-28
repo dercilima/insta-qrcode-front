@@ -1,7 +1,19 @@
-html {
-    font-size: 62.5%;
+/* Variáveis */
+:root {
+    --card-width: 350px;
+    --card-background: #FFFFFF;
+    --title-color: #1F3251;
+    --description-color: #7b879d;
 }
 
+/* Resetar as métricas do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Definições do body */
 body {
     background-color: #343536;
     font-family: 'Outfit', sans-serif;
@@ -15,12 +27,13 @@ body {
 }
 
 .card {
-    background-color: white;
-    width: 35rem;
+    background-color: var(--card-background);
+    width: var(--card-width);
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    margin: 1.5rem;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
 }
 
 .image {
@@ -28,22 +41,19 @@ body {
 }
 
 .card, .image {
-    border-radius: 2rem;
-}
-
-h1, p {
-    text-align: center;
+    border-radius: 20px;
 }
 
 h1 {
-    margin: 1.5rem;
-    font-size: 3rem;
-    color: hsl(218, 44%, 22%);
+    margin: 15px;
+    font-size: 30px;
+    color: var(--title-color);
 }
 
 p {
-    font-size: 1.8rem;
-    color: hsl(220, 15%, 55%);
+    font-size: 18px;
+    color: var(--description-color);
+    margin-bottom: 16px;
 }
 
 .gradient-background {
