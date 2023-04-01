@@ -9,12 +9,12 @@ let compartilharButton = document.getElementById("compartilharPerfilButton")
 compartilharButton.addEventListener('click', compartilharPerfilFn)
 
 function compartilharPerfilFn() {
-    navigator['share']("https://www.instagram.com/jornadadeprogramador/")
+    navigator.share("https://www.instagram.com/jornadadeprogramador/")
     .then(() => {
         window.alert("Share!")
     })
-    .catch(() => {
-        window.alert("Algo deu errado!")
+    .catch((err) => {
+        window.alert("Algo deu errado!\n" + err)
     })
 }
 
