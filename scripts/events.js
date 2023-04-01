@@ -14,6 +14,7 @@ function compartilharPerfilFn() {
         window.alert("Share!")
     })
     .catch((err) => {
+        document.write(JSON.stringify(err))
         window.alert("Algo deu errado!\n" + err)
     })
 }
