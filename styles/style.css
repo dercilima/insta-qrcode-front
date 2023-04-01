@@ -67,6 +67,7 @@ main {
     justify-content: center;
     gap: 8px;
     padding: 12px;
+    font-family: inherit;
 }
 
 .button > img {
@@ -77,6 +78,10 @@ main {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 span, h1 {
