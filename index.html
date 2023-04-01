@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt_br">
 <head>
-  <meta charset="UTF-8">
-  <!-- displays site properly based on user's device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
-  <title>QR Code component</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Insta Card</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
-<body class="gradient-background">
-  <main class="container">
-    <!-- Card -->
-    <div class="card animate__animated animate__pulse">
-      <img class="image" src="images/qrcode-jornada.png" alt="QRCode do Instagram da Jornada de Programador" />
-      <h1>Conheça a Jornada de Programador</h1>
-      <p>Leia o QR Code para visitar o perfil da Jornada de Programador e aprenda novas habilidades como dev!</p>
-    </div>
-  </main>
+<body>
+    <main>
+        <!-- CARD -->
+        <div class="card-container">
+            <!-- QR Code -->
+            <div class="qrcode-container">
+                <img class="qrcode" src="images/qrcode.png" alt="QR Code da Jornada de Programador">
+            </div>
+            <!-- Botões de Compartilhar e Link -->
+            <div class="button-container">
+                <!-- Botão de Compartilhar -->
+                <button id="compartilharPerfilButton" class="button">
+                    <img src="images/icone-compartilhar.png" alt="Ícone de compartlhar">
+                    <span>Compartilhar perfil</span>
+                </button>
+                <!-- Botão de Copiar Link -->
+                <button class="button" onclick="copiarLink()">
+                    <img src="images/icone-link.png" alt="Ícone de copiar link">
+                    <span>Copiar link</span>
+                </button>
+            </div>
+            <h1>
+                CONHEÇA A<br/>
+                <strong>Jornada de<br/>Programador</strong>
+            </h1>
+            <img class="foguete" src="images/foguete.png" alt="Imagem de um foguete">
+        </div>
+    </main>
+    <script src="scripts/events.js"></script>
 </body>
-
 </html>
